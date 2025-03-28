@@ -1,0 +1,19 @@
+{
+    "name": "instagram-followers-to-airtable",
+    "version": "1.0.0",
+    "description": "A script to collect Instagram followers and upload them to Airtable.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./Instagram/index.js"
+    },
+    "dependencies": {
+        "airtable": "^0.11.1",
+        "axios": "^1.8.4",
+        "fs-extra": "^10.1.0",
+        "path": "^0.12.7",
+        "puppeteer-extra": "^3.1.13",
+        "puppeteer-extra-plugin-stealth": "^2.7.1"
+    },
+    "author": "",
+    "license": "MIT"
+}

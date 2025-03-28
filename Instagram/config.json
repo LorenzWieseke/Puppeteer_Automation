@@ -1,0 +1,15 @@
+{
+  "linkedIn":{
+    "username": "wieseke87@gmx.de",
+    "password": "NQdC4R3UiH!NgyH"
+  },
+"instagram":{
+    "username": "loviz_proviz",
+    "password": "M-%7Tx_vbj@(=nF"
+},
+"airtable": {
+  "accessToken": "patsm7gMvOfybgMDW.970b02e2b215deca317f1ab9cd2baead09472e3938e6e443ff856dfe7fcb7601",
+  "baseId": "appq74Zoh0KCphCoU", 
+  "tableName": "instagram_followers"
+}
+}
