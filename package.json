@@ -12,7 +12,8 @@
         "fs-extra": "^10.1.0",
         "path": "^0.12.7",
         "puppeteer-extra": "^3.1.13",
-        "puppeteer-extra-plugin-stealth": "^2.7.1"
+        "puppeteer-extra-plugin-stealth": "^2.7.1",
+        "puppeteer": "^24.4.0"
     },
     "author": "",
     "license": "MIT"

@@ -3,7 +3,7 @@ const { loadCookies, login, USER_DATA_DIR } = require('./login');
 const { getFollowers } = require('./getFollowers');
 const { unfollowEveryone } = require('./unfollow');
 const { sharePost } = require('./sharePost');
-const { saveToAirtable } = require('./saveFollowers');
+const { saveRecordsToAirtable, fetchRecordsFromAirtable } = require('./airtable'); // Updated import
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 
 puppeteer.use(StealthPlugin());
@@ -38,7 +38,12 @@ async function runGetFollowers(page) {
 }
 
 async function runSaveToAirtable() {
-  await saveToAirtable();
+  await saveRecordsToAirtable(); // Updated function name
+}
+
+async function runSharePost(page) {
+  console.log('Running sharePost...');
+  await sharePost(page); // Ensure it uses the updated sharePost logic
 }
 
 async function run() {
@@ -47,12 +52,11 @@ async function run() {
   // 1. LOGIN
   let page = await runLogin();
   
-  
   // 2. GET FOLLOWERS
   // await runGetFollowers(page);
   
   // 3. SHARE POST
-  // await sharePost(page);
+  await runSharePost(page);
   
   // 4. UNFOLLOW EVERYONE
   await unfollowEveryone(page);
